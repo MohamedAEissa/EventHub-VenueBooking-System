@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\**" />
+    <Compile Remove="Features\Halls\Dtos\VenuesAndHalls\**" />
+    <Compile Remove="Features\Halls\Services\**" />
+    <Compile Remove="Common\Mappings\NewFolder\**" />
+    <Compile Remove="DependencyInjection\**" />
+    <Compile Remove="Features\Services - Copy\**" />
+    <Compile Remove="Validators\**" />
+    <EmbeddedResource Remove="Dtos\**" />
+    <EmbeddedResource Remove="Features\Halls\Dtos\VenuesAndHalls\**" />
+    <EmbeddedResource Remove="Features\Halls\Services\**" />
+    <EmbeddedResource Remove="Common\Mappings\NewFolder\**" />
+    <EmbeddedResource Remove="DependencyInjection\**" />
+    <EmbeddedResource Remove="Features\Services - Copy\**" />
+    <EmbeddedResource Remove="Validators\**" />
+    <None Remove="Dtos\**" />
+    <None Remove="Features\Halls\Dtos\VenuesAndHalls\**" />
+    <None Remove="Features\Halls\Services\**" />
+    <None Remove="Common\Mappings\NewFolder\**" />
+    <None Remove="DependencyInjection\**" />
+    <None Remove="Features\Services - Copy\**" />
+    <None Remove="Validators\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="FluentValidation" Version="9.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.0.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventHub.Domain\EventHub.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Auth\Queries\" />
+    <Folder Include="Features\Events\Validators\" />
+  </ItemGroup>
+
+</Project>
