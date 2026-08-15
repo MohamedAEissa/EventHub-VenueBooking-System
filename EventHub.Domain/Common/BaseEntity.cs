@@ -14,5 +14,7 @@ namespace EventHub.Domain.Common
 
         public void UpdateModifiedDate() => LastModifiedAt = DateTime.UtcNow;
         //vvvv
+
+        //vvv2
     }
 }
