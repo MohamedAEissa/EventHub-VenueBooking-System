@@ -1,7 +1,6 @@
 ﻿using EventHub.Application.Common.Behaviors;
 using EventHub.Application.Common.InterFaces;
 using EventHub.Application.Common.Mappings;
-using EventHub.Infrastructure.Context;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;

@@ -118,12 +118,14 @@ EventHub/
 1. **Clone the Repository:**
    ```bash
    git clone [https://github.com/MohamedAEissa/EventHub.git](https://github.com/MohamedAEissa/EventHub.git)
-   cd EventHub      
+   cd EventHub
+      
 2. **Configure Connection String:
    Update the database connection string in src/EventHub.WebApi/appsettings.json:
    "ConnectionStrings": {
   "DefaultConnection": "Server=YOUR_SERVER;Database=EventHubDb;Trusted_Connection=True;TrustServerCertificate=True;"
-}    
+}
+    
 3. **Apply Database Migrations:
     dotnet ef database update --project src/EventHub.Infrastructure --startup-project src/EventHub.WebApi
 

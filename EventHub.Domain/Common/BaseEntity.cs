@@ -13,5 +13,6 @@ namespace EventHub.Domain.Common
         public DateTime? LastModifiedAt { get; protected set; }
 
         public void UpdateModifiedDate() => LastModifiedAt = DateTime.UtcNow;
+        //vvvv
     }
 }
